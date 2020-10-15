@@ -21,11 +21,11 @@ def nao_entre_em_panico():
             if numero % i == 0:
                 ehprimo = 0
                 break
-            if (ehprimo):
-                primos = primos + str(numero) + ","
-                p+= 1
-                if(p % 10 == 0):
-                    primos = primos + "<br>"
+        if (ehprimo):
+            primos = primos + str(numero) + ","
+            p+= 1
+            if(p % 10 == 0):
+                primos = primos + "<br>"
         numero+=1
     
     return primos
