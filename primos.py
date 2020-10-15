@@ -26,8 +26,8 @@ def nao_entre_em_panico():
                 p+= 1
                 if(p % 10 == 0):
                     primos = primos + "<br>"
-            numero+=1
-
+        numero+=1
+    
     return primos
 
         
