@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def nao_entre_em_panico():
+   
     limite = 100
 
     c = 1
@@ -25,9 +26,10 @@ def nao_entre_em_panico():
                 p+= 1
                 if(p % 10 == 0):
                     primos = primos + "<br>"
-                numero+=1
+            numero+=1
 
-            return primos
+    return primos
+
         
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
